@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "38ZyCeMT22S/+vj+uBNQHU5lTPCGAXPQVitREbXLTKI=",
+  "Source": "RAS.Services.BagAPI",
+  "BasePath": "_content/RAS.Services.BagAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

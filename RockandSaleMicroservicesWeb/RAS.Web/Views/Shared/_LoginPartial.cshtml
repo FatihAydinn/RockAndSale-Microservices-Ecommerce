@@ -1,0 +1,29 @@
+﻿<head>
+	<style>
+		#black {
+			color: black !important;
+		}
+	</style>
+</head>
+<ul class="navbar-nav">
+	@if (User.Identity.IsAuthenticated)
+	{
+@*		<li class="nav-item">
+			<a style="color:black" class="nav-link" href="#">Hoş Geldin @User.Identity.Name</a>
+		</li>*@
+
+			<b>
+			<a style="margin-top:30px;font-size:large" id="black" class="nav-link" asp-action="Logout" asp-controller="Home">Çıkış</a>
+			</b>
+
+	}
+	else
+	{
+@*		<li class="nav-item">
+			<a class="nav-link" asp-action="Login" asp-controller="Home">Login</a>
+		</li>*@
+		<b>
+			<a style="margin-top:30px;font-size:large" id="black" class="nav-link" asp-action="Login" asp-controller="Home">Giriş</a>
+		</b>
+	}
+</ul>

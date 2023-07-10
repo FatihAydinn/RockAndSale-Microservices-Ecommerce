@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "suq9RwLjKTUOiPNx1Xph0cfAH4XgTAWPV3MgFep5cbQ=",
+  "Source": "RAS.Services.ProductAPI",
+  "BasePath": "_content/RAS.Services.ProductAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

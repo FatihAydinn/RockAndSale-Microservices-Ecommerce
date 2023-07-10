@@ -1,0 +1,369 @@
+﻿@model IEnumerable<ProductDto> 
+@*    <form>
+        <div class="container row">
+        @foreach (var product in Model)
+        {
+            <div class="col-4 ">
+                <div class="p-0 my-3 border">
+                    <div class="card">
+
+                        <img src="~/rashtml/rockandsale/~/Uploads/@product.ImageUrl" class="card-img-top" alt="@product.ImageUrl">
+                        <div class="card-body">
+                            <h2 class="card-title text-success">@product.Brand</h2>
+                            <h4 class="card-title text-danger">@product.Model</h4>
+                            <span class="badge badge-light mb-2 ">@product.Category</span>
+                            <p class="card-text">@Html.Raw(product.Description)</p>
+                            <div class="row">
+                                <div class="col pt-1">
+                                    <span style="font-size:23px;">@string.Format("{0:c}", product.Price)</span>
+                                </div>
+                                <div class="col">
+                                    <a asp-action="Details" asp-route-productId="@product.ProductId"
+                                       class="btn btn-success form-control">Details</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        </div>    
+    </form>*@
+
+<!-- OFFCANVAS BAŞLANGIÇ -->
+
+<!-- ALT MENU SON -->
+<!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<!-- class="d-block w-100" -->
+<!-- style="height: 450px;" width="1500px" -->
+<div id="carouselExampleControls" class="carousel   slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item  active simg">
+            <img src="~/rashtml/rockandsale/images/2300540.jpg " class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item  simg">
+            <img src="~/rashtml/rockandsale/images/711195.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item simg">
+            <img src="~/rashtml/rockandsale/images/da2cd925bffd14af304889883503c2fa95defa14.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item simg">
+            <img src="~/rashtml/rockandsale/images/istockphoto-1354888842-170667a.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </button>
+</div>
+<br>
+
+<br>
+
+<br>
+<div class="container d-block d-md-none">
+    <h2 style="font-family:monospace">🔥 Çok Satanlar 🔥</h2>
+
+    <form>
+        <div class="card-group ml-5">
+            @foreach (var product in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 border-danger">
+                        <a class="mt-3 mb-3" href="">
+                            <img src="~/Uploads/@product.ImageUrl" class="card-img-top" alt="@product.ImageUrl">
+                        </a>
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">@product.Price TL</h5>
+                            <h2 class="card-text" style="color:darkred">@product.Brand</h2>
+                            <h4>@product.Model</h4>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </form>
+
+@*    <div class="card-group ml-5">
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <a href="#"> <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale/images/les-paul-gold.jpg" alt="..."></a>
+            <hr>
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger">5999TL</h5>
+                <p class="card-tex t">Gibson Les Paul Standard '50s Elektro Gitar (Gold Top)</p>
+            </div>
+        </div>
+    </div>*@
+
+@*    <div class="card-group ml-5">
+
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <a href="#"> <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/les-paul-gold.jpg" alt="..."></a>
+            <hr>
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger">5999TL</h5>
+                <p class="card-tex t">Gibson Les Paul Standard '50s Elektro Gitar (Gold Top)</p>
+            </div>
+        </div>
+    </div>*@
+</div>
+<br>
+<br>
+<br>
+<div class="container d-none d-md-block d-lg-none">
+    <h2 style="font-family:monospace">🔥 Çok Satanlar 🔥</h2>
+    <form>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            @foreach (var product in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 border-danger">
+                        <a class="mt-3 mb-3" href="">
+                            <img src="~/Uploads/@product.ImageUrl" class="card-img-top" alt="@product.ImageUrl">
+                        </a>
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">@product.Price TL</h5>
+                            <h2 class="card-text" style="color:darkred">@product.Brand</h2>
+                            <h4>@product.Model</h4>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </form>
+   @* <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card border-danger">
+                <a href="#"> <img class="mt-3  mb-3 card-img-top" src="~/rashtml/rockandsale//images/les-paul-gold.jpg" alt="..."></a>
+                <div class="card-body">
+                    <hr>
+                    <h5 class="card-title text-center text-danger">5900TL</h5>
+                    <p class="card-text ">Gibson Les Paul Standard '50s Elektro Gitar (Gold Top)</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>*@
+</div>
+<br>
+<div class="container d-none d-lg-block d-md-none">
+    <h2 style="font-family:monospace">🔥 Çok Satanlar 🔥</h2>
+    <div class="row" style="text-align: center;">
+            <form>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+                   @foreach (var product in Model)
+                    {
+            <div class="col">
+                <div class="card h-100 border-danger">
+                   <a class="mt-3 mb-3" href="">
+                       <img src="~/Uploads/@product.ImageUrl" class="card-img-top" alt="@product.ImageUrl"></a>
+                           <hr/>
+                           <div class="card-body">
+                           <h5 class="card-title text-danger">@product.Price TL</h5>
+                           <h2 class="card-text" style="color:darkred">@product.Brand</h2>
+                           <h4>@product.Model</h4>
+                           </div>
+                            <div class="col">
+                                <a asp-action="Details" asp-route-productId="@product.ProductId"
+                                   class="btn btn-danger form-control">Details</a>
+                            </div>
+                            <br>
+                       </div>
+                   </div>
+                    }
+            </div>
+            </form>
+        </div>
+    </div>
+<br>
+@*<br>
+<div class="container d-block d-md-none">
+    <h2 style="font-family:monospace">⚡ Flaş Ürünler ⚡</h2>
+    <div class="card-group ml-5">
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+            <hr>
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger">2799TL</h5>
+                <p class="card-tex t">Fender Player Stratocaster</p>
+            </div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+            <hr>
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger">2799TL</h5>
+                <p class="card-tex t">Fender Player Stratocaster</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-group ml-5">
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+            <hr>
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger">2799TL</h5>
+                <p class="card-tex t">Fender Player Stratocaster</p>
+            </div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+            <hr>
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger">2799TL</h5>
+                <p class="card-tex t">Fender Player Stratocaster</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>*@
+<br>
+@*<br>
+<div class="container d-none d-md-block d-lg-none">
+    <h2 style="font-family:monospace">⚡ Flaş Ürünler ⚡</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card border-danger">
+                <img class="mt-3  mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+                <div class="card-body">
+                    <hr>
+                    <h5 class="card-title text-center text-danger">2700TL</h5>
+                    <p class="card-text ">Fender Player Stratocaster<p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-danger">
+                <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+                <div class="card-body">
+                    <hr>
+                    <h5 class="card-title text-center text-danger">2700TL</h5>
+                    <p class="card-text ">Fender Player Stratocaster</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card border-danger">
+                <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+                <div class="card-body">
+                    <hr>
+                    <h5 class="card-title text-center text-danger">2700TL</h5>
+                    <p class="card-text ">Fender Player Stratocaster</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-danger">
+                <img class="mt-3 mb-3 card-img-top" src="~/rashtml/rockandsale//images/fender-start.jpg" alt="...">
+                <div class="card-body">
+                    <hr>
+                    <h5 class="card-title text-center text-danger">2700TL</h5>
+                    <p class="card-text ">Fender Player Stratocaster</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+        </div>
+<br>*@
+@*<div class="container d-none d-lg-block d-md-none">
+    <h2 style="font-family:monospace">⚡ Flaş Ürünler ⚡</h2>
+    <div class="row" style="text-align: center;">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100 border-danger ">
+                    <img class="mt-3 mb-3" src="~/rashtml/rockandsale//images/fender-start.jpg" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">2799TL</h5>
+                        <p class="card-text">Fender Player Stratocaster</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-danger">
+                    <img class="mt-3 mb-3" src="~/rashtml/rockandsale//images/fender-start.jpg" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">2799TL</h5>
+                        <p class="card-text">Fender Player Stratocaster</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-danger">
+                    <img class="mt-3 mb-3" src="~/rashtml/rockandsale//images/fender-start.jpg" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">2799TL</h5>
+                        <p class="card-text">Fender Player Stratocaster</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-danger">
+                    <img class="mt-3 mb-3" src="~/rashtml/rockandsale//images/fender-start.jpg" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">2799TL</h5>
+                        <p class="card-text">Fender Player Stratocaster</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        </div>
+<br>*@
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col-sm-6">
+                <div class="card text-bg-dark">
+                    <img src="~/rashtml/rockandsale/images/3in1.jpg" style=" max-height: 390px;" class="card-img" alt="...">
+                    <div class="card-img-overlay text-center">
+                        <a href="#">
+                            <h1 class="card-title text-light mt-5">Hangi gitar ile başlamalıyım?</h1>
+                            <h3 style="font-size: x-large;" class="d-sm-none d-lg-block card-text mt-5 text-light">Nasıl bir başlangıç yapacağını bilmiyorsan hemen gitar türlerini inceleyerek bilgi edinebilirsin.</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-bg-dark">
+                    <img src="~/rashtml/rockandsale/images/online-course.jpg" style=" max-height: 390px;" class="card-img" alt="...">
+                    <div class="card-img-overlay text-center">
+                        <a href="#">
+                            <h1 class="card-title text-light mt-5">Dersler</h1>
+                            <h3 style="font-size: x-large;" class="d-sm-none d-lg-block card-text mt-5 text-light">Eğer yeniysen ve kendini bizim ile geliştirmek istiyorsan derslerimize göz at!</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

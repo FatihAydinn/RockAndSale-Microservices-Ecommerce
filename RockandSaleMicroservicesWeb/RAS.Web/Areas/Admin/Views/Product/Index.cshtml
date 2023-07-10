@@ -1,0 +1,70 @@
+﻿@model IEnumerable<RAS.Web.Models.ProductDto>
+@*@model IEnumerable<RAS.Web.ViewModels.ProductViewModel>*@
+
+<br />
+<br />
+        <tbody>
+                <br>
+<!-- RenderBody(); -->
+<main id="main" class="main">
+<div class="dashboard container">
+    <div class="card top-selling overflow-auto bg-dark">
+      <div class="card-body pb-0">
+        
+        <h5 class="card-title text-light">Gitar <span>| Listesi</span>
+          <a asp-action="ProductCreate" class="bi bi-plus-square-fill btn btn-light btn-sm" style="float: right; margin-right: 25px; font-size: large;"></a>
+        </h5>
+        <table class="table table-dark text-light" style="text-align: center;">
+          <thead class="fw-bold" style="font-size: large;">
+
+            <tr>
+            <thead>
+            <tr>
+                <th>
+                    Brand
+                </th>
+                <th>
+                    Model
+                </th>
+                <th>
+                    Category Name
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Resim
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+           @foreach (var item in Model)
+            {
+              <tr>
+              <td scope="col">@item.Brand</td>
+              <td scope="col">@item.Model</td>
+              <td scope="col">@item.Category</td>
+              <td scope="col">@item.Price</td>
+              <th>
+              <img src="~/Uploads/@item.ImageUrl" class="card-img-top" style="height:50px;width:50px;" asp-append-version="true">
+              </th>
+              @*<th scope="col">İşlemler</th>*@
+              <td>
+               <a asp-action="ProductEdit" asp-route-productId="@item.ProductId" class="bi bi-pen-fill btn btn-light btn-sm"></a>
+                <a asp-action="ProductDelete" asp-route-productId="@item.ProductId" onclick="return confirm('Silmek istediğinize emin misiniz?')" class="bi bi-trash-fill btn btn-light btn-sm"></a>
+              </td>
+            </tr>
+
+            }
+          <tbody>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+  </main>
+<br>
+            }
+        </tbody>

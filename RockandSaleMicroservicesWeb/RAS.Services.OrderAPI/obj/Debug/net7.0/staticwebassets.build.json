@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BBlzHa8dV6tL3nYKiOVphRu142PuaAUsiWba45SMYmo=",
+  "Source": "RAS.Services.OrderAPI",
+  "BasePath": "_content/RAS.Services.OrderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

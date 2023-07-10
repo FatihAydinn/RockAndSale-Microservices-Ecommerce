@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8wHmCko7f4hBXdloY7W5xahJcOklco0PXqg3HmW/EoM=",
+  "Source": "RAS.Services.PaymentAPI",
+  "BasePath": "_content/RAS.Services.PaymentAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
