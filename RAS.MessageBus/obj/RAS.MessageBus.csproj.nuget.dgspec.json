@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\RAS.MessageBus.csproj": {}
+    "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\RAS.MessageBus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\RAS.MessageBus.csproj": {
+    "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\RAS.MessageBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\RAS.MessageBus.csproj",
+        "projectUniqueName": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\RAS.MessageBus.csproj",
         "projectName": "RAS.MessageBus",
-        "projectPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\RAS.MessageBus.csproj",
+        "projectPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\RAS.MessageBus.csproj",
         "packagesPath": "C:\\Users\\Fatih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\obj\\",
+        "outputPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",

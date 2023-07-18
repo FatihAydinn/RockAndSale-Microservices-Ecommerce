@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O1aztSo5Wam9EbaHyd8IMNjkXrYmkK1/QMz7s6tjBh2CVgWuPXJDz4iDI18I/eQ2vPry3fDlDaD9ie+hptNnkg==",
+  "dgSpecHash": "35vNnxMuouX64I506kcfa8QhUmoq82TsId1QpVdkv+OC/4lBiL39QpsmF63c6Q9EOxGoxeZ9xHa4npt5yHBPEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.GatewaySolution\\RAS.GatewaySolution.csproj",
+  "projectFilePath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.GatewaySolution\\RAS.GatewaySolution.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fatih\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\identitymodel\\5.1.0\\identitymodel.5.1.0.nupkg.sha512",

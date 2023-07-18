@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QNILRIw3F80UfwiUhjbxCw7FnevVnrDDrqv+afMo5FhZu5UEvT/500H28yMteE2JcQE4hWp/TouRGOAi2DWZCA==",
+  "dgSpecHash": "ilUr0DyCxvamh7Q6EmQGmsXfs7DFhjHR0fZ41uJwvS7EligsaUfp2j9t0Fgdgq/yMaur3sSZ5wZ0hizo36XhiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj",
+  "projectFilePath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fatih\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

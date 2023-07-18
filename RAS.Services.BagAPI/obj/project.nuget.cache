@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O72PxQmfwu8+wnRzDrFBGgD0EUMDgmdPuI3INwQfFJo5vxVIJRknWAM34opI/pCR7NbVgo+F8d5Y8KadH93BEQ==",
+  "dgSpecHash": "kV57uQ/xaTkKtG0bgOBpLV0c2S4UPtkqYJYqptn53+cbITh2cDmolA6w5EiKp/Pb6v/5Ue6wmup/ItRWfC2FgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.BagAPI\\RAS.Services.BagAPI.csproj",
+  "projectFilePath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.BagAPI\\RAS.Services.BagAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fatih\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

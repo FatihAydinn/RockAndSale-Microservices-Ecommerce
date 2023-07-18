@@ -1335,11 +1335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.GatewaySolution\\RAS.GatewaySolution.csproj",
+      "projectUniqueName": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.GatewaySolution\\RAS.GatewaySolution.csproj",
       "projectName": "RAS.GatewaySolution",
-      "projectPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.GatewaySolution\\RAS.GatewaySolution.csproj",
+      "projectPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.GatewaySolution\\RAS.GatewaySolution.csproj",
       "packagesPath": "C:\\Users\\Fatih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.GatewaySolution\\obj\\",
+      "outputPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.GatewaySolution\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj": {}
+    "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj": {
+    "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj",
         "projectName": "RAS.Services.ProductAPI",
-        "projectPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj",
+        "projectPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.ProductAPI\\RAS.Services.ProductAPI.csproj",
         "packagesPath": "C:\\Users\\Fatih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.ProductAPI\\obj\\",
+        "outputPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",

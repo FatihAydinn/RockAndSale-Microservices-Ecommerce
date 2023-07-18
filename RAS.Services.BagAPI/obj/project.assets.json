@@ -4213,11 +4213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.BagAPI\\RAS.Services.BagAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.BagAPI\\RAS.Services.BagAPI.csproj",
       "projectName": "RAS.Services.BagAPI",
-      "projectPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.BagAPI\\RAS.Services.BagAPI.csproj",
+      "projectPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.BagAPI\\RAS.Services.BagAPI.csproj",
       "packagesPath": "C:\\Users\\Fatih\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.BagAPI\\obj\\",
+      "outputPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.BagAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4235,8 +4235,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\RAS.MessageBus.csproj": {
-              "projectPath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\RAS.MessageBus.csproj"
+            "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\RAS.MessageBus.csproj": {
+              "projectPath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\RAS.MessageBus.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CEIatiNqFKaCsQ3bhzI2lRU0DN+TIWt1S9sr7lg5AH2spXYVnmRXCGK1nKTO1NGQL75ThyL7ARTE3VO9sBFNmg==",
+  "dgSpecHash": "X0U5lWL4o57rZkuK1flEAcUop0rpBVfJmsPx1eQaK4vRRnoai/wvyFXD5PUDiHQLRM3JNm0J9aFY2xotmq8Rnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.Services.Identity\\RAS.Services.Identity.csproj",
+  "projectFilePath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.Services.Identity\\RAS.Services.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fatih\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Fatih\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

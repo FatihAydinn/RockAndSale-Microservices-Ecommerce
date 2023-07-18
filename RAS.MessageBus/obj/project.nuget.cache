@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I5Y8Rug8ljbmq7UjhoGawVnF8jeUVjnLZLpK4IxdLS3pF9gU4OETUTtzcJgIfK5U1sGhETFkfoA/StHWJ4Jq0Q==",
+  "dgSpecHash": "sbcP041Uk098o9M/BA7Aa2n4on8rc3VCsttOnJsZJEfVbZ9X1VWzvih2I3ecDiUIJFPrfXj9uEDOzP9pjCmlFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih\\Desktop\\evet\\C#\\MicroServices\\RockandSaleMicroservicesWeb\\RAS.MessageBus\\RAS.MessageBus.csproj",
+  "projectFilePath": "C:\\Users\\Fatih\\Documents\\GitHub\\RockAndSale-Ecommerce\\RAS.MessageBus\\RAS.MessageBus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fatih\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
