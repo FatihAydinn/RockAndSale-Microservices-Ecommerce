@@ -15,7 +15,7 @@ namespace RAS.Services.BagAPI.Models
         public string Brand { get; set; }
 
         [Required]
-        public string Model { get; set; }
+        public string GuitarModel { get; set; }
 
         [Required, Range(1, 999999)]
         public int Price { get; set; }

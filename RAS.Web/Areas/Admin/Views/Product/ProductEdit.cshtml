@@ -58,14 +58,14 @@
                     <h5 class="card-title text-white">Gitar Ekle</h5>
 
                     <!-- Vertical Form -->
-                    <form class="row g-3 bg-dark">
+                    <form class="row g-3 bg-dark" method="post" enctype="multipart/form-data">
                         <div class="col-12">
                             <label class="form-label">Marka</label>
                             <input asp-for="Brand" type="text" class="form-control" placeholder="Epiphone">
                         </div>
                         <div class="col-12">
                             <label class="form-label">Model</label>
-                            <input asp-for="Model" type="text" class="form-control" placeholder="Les Paul">
+                            <input asp-for="GuitarModel" type="text" class="form-control" placeholder="Les Paul">
                         </div>
                         <div class="col-12">
                             <label class="form-label">Türü</label>
@@ -79,12 +79,10 @@
                             <label class="form-label">Kategori</label>
                             <input asp-for="Category" type="text" class="form-control" placeholder="Elektro Gitar">
                         </div>
-@*                        <div class="col-12">
-                            <label class="col-sm-2 col-form-label">Görsel Ekle</label>
-                            <div class="col-sm-12">
-                                <input asp-for="ProductPicture" class="form-control" type="file">
-                            </div>
-                        </div>*@
+                        <div class="col-12">
+                            <label class="form-label">Açıklama</label>
+                            <input asp-for="Description" type="text" class="form-control" placeholder="Elektro Gitar">
+                        </div>
 
                         <div class="form-group">
                             <label asp-for="ProductPicture" class="control-label"></label>
@@ -93,7 +91,7 @@
                                 <label class="custom-file-label" for="customFile"></label>
                             </div>
                             <span asp-validation-for="ProductPicture" class="text-danger"></span>
-                            <img src="~/Uploads/@Model.ImageUrl" class="card-img-top" style="height:200px;width:200px;" asp-append-version="true">
+                            <img src="~/Uploads/@Model.ImageUrl" class="card-img-top" style="height:150px;width:150px;" asp-append-version="true">
                         </div>
 
                         <div class="mt-5">

@@ -1,71 +1,117 @@
 ﻿@model RAS.Web.ViewModels.ProductViewModel
+@*
+@{
+    ViewData["Title"] = "Create Product";
+}
 
-@*<h4>Ürün Düzenle</h4>
-<hr />*@
+<h2>@ViewData["Title"]</h2>
 
-<!DOCTYPE html>
-<html lang="en">
+@using (Html.BeginForm("ProductCreate", "Product", FormMethod.Post, new { enctype = "application/json" }))
+{
+    @Html.AntiForgeryToken()
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Ana sayfa</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-@*    <link href="~/rashtml/adminn/assets/img/favicon.png" rel="icon">
-    <link href="~/rashtml/adminn/assets/img/apple-touch-icon.png" rel="apple-touch-icon">*@
-
-@*    <!-- Google Fonts -->
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />*@
-
-    <!-- Vendor CSS Files -->
-@*    <link href="~/rashtml/adminn/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="~/rashtml/adminn/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="~/rashtml/adminn/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="~/rashtml/adminn/assets/vendor/quill/quill.snow.css" rel="stylesheet">
-    <link href="~/rashtml/adminn/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-    <link href="~/rashtml/adminn/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="~/rashtml/adminn/assets/vendor/simple-datatables/style.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="~/rashtml/adminn/assets/css/style.css" rel="stylesheet">*@
-
-    <!-- =======================================================
-    * Template Name: NiceAdmin - v2.5.0
-    * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-</head>
-
-<body>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(model => model.Category, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Brand)
+        @Html.TextBoxFor(model => model.Brand, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <label asp-for="ProductPicture" class="control-label"></label>
+        <div class="custom-file">
+            <input asp-for="ProductPicture" class="custom-file-input" />
+            <label class="custom-file-label" for="customFile"></label>
+        </div>
+        <span asp-validation-for="ProductPicture" class="text-danger"></span>
+    </div>*@
 
 
-    <br>
-    <br>
-    <br>
-    <!-- RenderBody(); -->
+
+@*    <div class="form-group">
+        @Html.LabelFor(model => model.Model, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(model => model.Model, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Model, "", new { @class = "text-danger" })
+    </div>*@
+
+
+@*    <div class="form-group">
+        @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+    </div>
+
+    <!-- Diğer input alanları da benzer şekilde devam eder -->
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button style="float: right;" type="submit" class="btn btn-success btn-lg">Kaydet</button>
+
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+*@
+
+@*<main id="main" class="main">
+ <form method="post">
+    <label class="control-label">Brand</label>
+    @Html.TextBoxFor(m => m.Brand, new{@class = "form-control"})
+    @Html.ValidationMessageFor(m=>m.Brand,"",new {@class="text-danger"})
+        <br />
+    <label class="control-label">Model</label>
+    @Html.TextBoxFor(m => m.Model, new{@class = "form-control"})
+    @Html.ValidationMessageFor(m=>m.Model,"",new {@class="text-danger"})
+        <br />
+    <label class="control-label">Category</label>
+    @Html.TextBoxFor(m => m.Category, new{@class = "form-control"})
+    @Html.ValidationMessageFor(m=>m.Category,"",new {@class="text-danger"})
+        <br />
+    <label class="control-label">Price</label>
+    @Html.TextBoxFor(m => m.Price, new{@class = "form-control"})
+    @Html.ValidationMessageFor(m=>m.Price,"",new {@class="text-danger"})
+        <br />
+    <label class="control-label">Description</label>
+    @Html.TextBoxFor(m => m.Description, new{@class = "form-control"})
+    @Html.ValidationMessageFor(m=>m.Description,"",new {@class="text-danger"})
+
+<button style="float: right;" type="submit" class="btn btn-success btn-lg">Kaydet</button>
+</form>
+</main>*@
+
+
+@*<input type="submit" value="Create" class="btn btn-primary" />*@
+
+
+    @*@Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })*@
+
+@*<form asp-action="ProductCreate" enctype="multipart/form-data">
+                        <form method="post">*@
+
     <main id="main" class="main">
         <div class="container">
             <div class="card bg-dark">
                 <div class="card-body">
                     <h5 class="card-title text-white">Gitar Ekle</h5>
 
-                    <!-- Vertical Form -->
-                    <form class="row g-3 bg-dark">
+                    <form class="row g-3 bg-dark" method="post" enctype="multipart/form-data">
                         <div class="col-12">
                             <label class="form-label">Marka</label>
                             <input asp-for="Brand" type="text" class="form-control" >
                         </div>
                         <div class="col-12">
-                            <label class="form-label">Model</label>
-                            <input asp-for="Model" type="text" class="form-control">
+                        <label class="form-label">Model</label>
+                        <input asp-for="GuitarModel" type="text" class="form-control">
                         </div>
                         <div class="col-12">
                             <label class="form-label">Kategori</label>
@@ -79,30 +125,21 @@
                             <label class="form-label">Açıklama</label>
                             <input asp-for="Description" type="text" class="form-control" >
                         </div>
-@*                        <div class="col-12">
-                            <label class="col-sm-2 col-form-label">Görsel Ekle</label>
-                            <div class="col-sm-12">
-                                <input asp-for="ProductPicture" class="form-control" type="file">
-                            </div>
-                        </div>*@
 
-                        <div class="form-group">
-                            <label asp-for="ProductPicture" class="control-label"></label>
-                            <div class="custom-file">
-                                <input asp-for="ProductPicture" class="custom-file-input" />
-                                <label class="custom-file-label" for="customFile"></label>
-                            </div>
-                            <span asp-validation-for="ProductPicture" class="text-danger"></span>
-                            @*<img src="~/Uploads/@Model.ImageUrl" class="card-img-top" style="height:200px;width:200px;" asp-append-version="true">*@
+                    <div class="form-group">
+                        <label asp-for="ProductPicture" class="control-label"></label>
+                        <div class="custom-file">
+                            <input asp-for="ProductPicture" class="custom-file-input" />
+                            <label class="custom-file-label" for="customFile">Dosya Seç</label>
                         </div>
+                        <span asp-validation-for="ProductPicture" class="text-danger"></span>
+                    </div>
 
                         <div class="mt-5">
                             <button style="float: right;" type="submit" class="btn btn-success btn-lg">Kaydet</button>
-                            @*<a asp-action="Index" style="float: right;" type="a" class="btn btn-success btn-lg">Kaydet</a>*@
                             <a asp-action="Index" class="btn btn-danger btn-lg">İptal</a>
                         </div>
-                    </form><!-- Vertical Form -->
-
+    </form>
                 </div>
             </div>
         </div>
@@ -111,27 +148,7 @@
     <br>
     <br>
 
-
-
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Vendor JS Files 
-    <script src="~/rashtml/adminn/assets/vendor/apexcharts/apexcharts.min.js"></script>
-    <script src="~/rashtml/adminn/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/rashtml/adminn/assets/vendor/chart.js/chart.umd.js"></script>
-    <script src="~/rashtml/adminn/assets/vendor/echarts/echarts.min.js"></script>
-    <script src="~/rashtml/adminn/assets/vendor/quill/quill.min.js"></script>
-    <script src="~/rashtml/adminn/assets/vendor/simple-datatables/simple-datatables.js"></script>
-    <script src="~/rashtml/adminn/assets/vendor/tinymce/tinymce.min.js"></script>
-    <script src="~/rashtml/adminn/assets/vendor/php-email-form/validate.js"></script>
-    <script src="~/rashtml/adminn/assets/js/main.js"></script>
-    -->
-    <!-- Template Main JS File -->
-
-</body>
-
-</html>
-
+@*------------------------------------------------------------------------------------------------------------------------------*@
 @*<div class="row">
     <div class="col-md-4">
         <form asp-action="ProductEdit" enctype="multipart/form-data">

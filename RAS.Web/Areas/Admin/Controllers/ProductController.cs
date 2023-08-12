@@ -36,28 +36,28 @@ namespace RAS.Web.Areas.Admin.Controllers
 
 //[HttpPost]
         //
-        public async Task<IActionResult> ProductCreate()
+        public ActionResult ProductCreate()
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ProductCreate(ProductViewModel model)
+        public async Task<IActionResult> ProductCreate(ProductViewModel createmodel)
         {
-            string yuklenenResimAdi = UploadIMG(model);
+            string yuklenenResimAdi = UploadIMG(createmodel);
             var accessToken = await HttpContext.GetTokenAsync("access_token");
 
             ProductDto productDto = new ProductDto
             {
-                ProductId = model.ProductId,
-                Brand = model.Brand,
-                Model = model.Model,
-                Price = model.Price,
-                Description = model.Description,
+                ProductId = createmodel.ProductId,
+                Brand = createmodel.Brand,
+                GuitarModel = createmodel.GuitarModel,
+                Price = createmodel.Price,
+                Description = createmodel.Description,
                 ImageUrl = yuklenenResimAdi,
-                Category = model.Category,
-                Count = model.Count
+                Category = createmodel.Category,
+                Count = createmodel.Count
             };
 
             var response = await _productService.CreateProductAsync<ResponseDto>(productDto, accessToken);
@@ -65,10 +65,10 @@ namespace RAS.Web.Areas.Admin.Controllers
             {
                 return RedirectToAction(nameof(Index));
             }
-            else
-                return RedirectToAction(nameof(Index));
+            //else
+            //    return RedirectToAction(nameof(Index));
 
-            return View(model);
+            return View(createmodel);
         }
 
         public async Task<IActionResult> ProductEdit(int productId)
@@ -83,7 +83,7 @@ namespace RAS.Web.Areas.Admin.Controllers
                 {
                 ProductId = model.ProductId,
                 Brand = model.Brand,
-                Model = model.Model,
+                GuitarModel = model.GuitarModel,
                 Price = model.Price,
                 Description = model.Description,
                 ImageUrl = model.ImageUrl,
@@ -107,24 +107,23 @@ namespace RAS.Web.Areas.Admin.Controllers
             {
                 ProductDto model2 = JsonConvert.DeserializeObject<ProductDto>(Convert.ToString(guncellencekUrun.Result));
 
-                if (model.ProductPicture != null)
-                {
+
                     string filePath = Path.Combine(_environment.WebRootPath, "Uploads", model2.ImageUrl);
-                    System.IO.File.Delete(filePath);
+                    //System.IO.File.Delete(filePath);
                     string yuklenenResimAdi = UploadIMG(model);
                     model2.Brand = model.Brand;
-                    model2.Model = model.Model;
+                    model2.GuitarModel = model.GuitarModel;
                     model2.Price = model.Price;
                     model2.Description = model.Description;
                     model2.ImageUrl = yuklenenResimAdi;
                     model2.Category = model.Category;
                     model2.Count = model.Count;
                     var response = await _productService.UpdateProductAsync<ResponseDto>(model2, accessToken);
-                    if (response != null && response.IsSuccess)
-                    {
-                        return RedirectToAction(nameof(Index));
-                    }
+                if (response != null && response.IsSuccess)
+                {
+                    return RedirectToAction(nameof(Index));
                 }
+
             }
             return View(model);
         }
@@ -156,16 +155,16 @@ namespace RAS.Web.Areas.Admin.Controllers
                 Directory.CreateDirectory(dosyaninYuklenecegiKlasorYolu);
             }
 
-            //if (model.ProductPicture.FileName != null)
-            //{
-            //    dosyaAdi = model.ProductPicture.FileName;
-            //    string filePath = Path.Combine(dosyaninYuklenecegiKlasorYolu, dosyaAdi);
-            //    using (var fileStream = new FileStream(filePath, FileMode.Create))
-            //    {
-            //        model.ProductPicture.CopyTo(fileStream);
-            //    }
+            if (model.ProductPicture.FileName != null)
+            {
+                dosyaAdi = model.ProductPicture.FileName;
+                string filePath = Path.Combine(dosyaninYuklenecegiKlasorYolu, dosyaAdi);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.ProductPicture.CopyTo(fileStream);
+                }
 
-            //}
+            }
             return dosyaAdi;
         }
         //------------------

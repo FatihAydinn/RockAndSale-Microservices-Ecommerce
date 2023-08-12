@@ -42,13 +42,12 @@
             {
               <tr>
               <td scope="col">@item.Brand</td>
-              <td scope="col">@item.Model</td>
+              <td scope="col">@item.GuitarModel</td>
               <td scope="col">@item.Category</td>
               <td scope="col">@item.Price</td>
               <th>
               <img src="~/Uploads/@item.ImageUrl" class="card-img-top" style="height:50px;width:50px;" asp-append-version="true">
               </th>
-              @*<th scope="col">İşlemler</th>*@
               <td>
                <a asp-action="ProductEdit" asp-route-productId="@item.ProductId" class="bi bi-pen-fill btn btn-light btn-sm"></a>
                 <a asp-action="ProductDelete" asp-route-productId="@item.ProductId" onclick="return confirm('Silmek istediğinize emin misiniz?')" class="bi bi-trash-fill btn btn-light btn-sm"></a>

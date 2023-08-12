@@ -10,3 +10,15 @@ C:\Users\Fatih\Desktop\evet\C#\MicroServices\RockandSaleMicroservicesWeb\RAS.Mes
 C:\Users\Fatih\Desktop\evet\C#\MicroServices\RockandSaleMicroservicesWeb\RAS.MessageBus\obj\Debug\net7.0\refint\RAS.MessageBus.dll
 C:\Users\Fatih\Desktop\evet\C#\MicroServices\RockandSaleMicroservicesWeb\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.pdb
 C:\Users\Fatih\Desktop\evet\C#\MicroServices\RockandSaleMicroservicesWeb\RAS.MessageBus\obj\Debug\net7.0\ref\RAS.MessageBus.dll
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\bin\Debug\net7.0\RAS.MessageBus.deps.json
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\bin\Debug\net7.0\RAS.MessageBus.dll
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\bin\Debug\net7.0\RAS.MessageBus.pdb
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.csproj.AssemblyReference.cache
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.AssemblyInfoInputs.cache
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.AssemblyInfo.cs
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.dll
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\refint\RAS.MessageBus.dll
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\RAS.MessageBus.pdb
+C:\Users\Fatih\Documents\GitHub\RockAndSale-Ecommerce\RAS.MessageBus\obj\Debug\net7.0\ref\RAS.MessageBus.dll

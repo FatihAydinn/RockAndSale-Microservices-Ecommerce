@@ -7,8 +7,8 @@ namespace RAS.Services.Identity
     {
         public Task SendEmailAsync(string email, string subject, string message)
         {
-            var mail = "pcprog123@outlook.com";
-            var pass = "15541554a.";
+            var mail = "GMAIL";
+            var pass = "PASS.";
 
             var client = new SmtpClient("smtp-mail.outlook.com", 587)
             {
